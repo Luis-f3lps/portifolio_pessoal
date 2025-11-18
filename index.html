@@ -14,27 +14,33 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav>
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#services">Trabalhos</a></li>
-                <li><a href="#portifolio">Certificação</a></li>
-                <li><a href="#contact">Contato</a></li>
-                <i class="fa-solid fa-circle-xmark" onclick="clossmenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <h1>Olá, sou <span>Luis Santiago</span></h1>
-            <p>Técnico em Informática e Analista de Sistemas</p>
+    <aside class="sidebar">
+        
+        <div class="sidebar-header">
+            <span>MENU PRINCIPAL</span>
         </div>
-    </div>
-    </div>
 
-    <!------------------Sobre--------------->
-    <div id="about">
+        <div class="user-profile">
+            <i class="fa-solid fa-user-circle"></i>
+            <span>Renato Trezes</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#header"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i> Sobre</a></li>
+                <li><a href="#services"><i class="fa-solid fa-briefcase"></i> Trabalhos</a></li>
+                <li><a href="#portifolio"><i class="fa-solid fa-certificate"></i> Certificação</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contato</a></li>
+            </ul>
+            
+            <ul class="nav-bottom">
+                 <li><a href="#" class="link-sair"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sair</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -389,6 +395,7 @@
             <a id="modal-link-repo" href="" target="_blank" class="link-repo">Acessar repositório</a>
             <a id="modal-link-linkedin" href="" target="_blank" class="link-linkedin">Ver post no LinkedIn</a>
         </div>
+        </main>
     <script src="js/index.js"></script>
     <script>
         var sidemenu = document.getElementById("sidemenu");
