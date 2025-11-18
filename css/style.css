@@ -58,7 +58,7 @@ p {
 
 .about-col-1 img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 150px;
 }
 
 .about-col-2 {
@@ -70,7 +70,7 @@ p {
     font-size: 40px;
     margin-bottom: 20px;
     font-weight: 600;
-    color: #fff;
+    color: #002b33;
 }
 
 .tab-titles {
@@ -145,7 +145,7 @@ p {
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 15px;
-    color: black;
+    color: #00accc;
 }
 
 .services-list div p {
@@ -197,7 +197,7 @@ p {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: 400;
-    color: rgb(0, 0, 0);
+    color: #002b33;
 }
 
 .layer {
@@ -513,7 +513,7 @@ display: inline;}
         width: 15%;
         min-width: 240px;
         height: 100vh;
-        background-color: #2d3748;
+        background-color: #4c4d4d;
 padding: 24px;        box-shadow: none;
         transition: none;
     }
