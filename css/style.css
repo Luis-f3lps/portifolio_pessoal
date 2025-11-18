@@ -132,7 +132,7 @@ p {
 
 /* --- Serviços --- */
 #services {
-    background: #ebebeb;
+    background: #002b33;
         padding: 30px;
 }
 
@@ -876,7 +876,7 @@ body {
 
 /* 1. Contêiner de Visualização (Recorta o conteúdo) */
 .logoloop-track {
-    width: 110%;
+    width: 100%;
     overflow: hidden; /* **Obrigatório** para esconder a parte que não está na tela */
     white-space: nowrap; /* Impede que os itens quebrem linha */
     padding: 20px 0;
