@@ -564,12 +564,6 @@ p {
         width: 85%;
     }
 
-    /* Esconde botões mobile */
-    #menu-toggle-open,
-    #menu-toggle-close {
-        display: none;
-    }
-
     /* Restaura Sidebar Desktop */
     .sidebar {
         position: static;
