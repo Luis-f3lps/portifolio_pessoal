@@ -433,7 +433,7 @@ p {
 
 /* --- Estilos de Botões Mobile (Padrão) --- */
 #menu-toggle-open {
-    display: block;
+    display: none;
     /* Mostrar por padrão */
     position: fixed;
     top: 20px;
@@ -514,8 +514,7 @@ display: inline;}
         min-width: 240px;
         height: 100vh;
         background-color: #2d3748;
-        /* Cor desktop */
-        box-shadow: none;
+padding: 24px;        box-shadow: none;
         transition: none;
     }
 
@@ -545,7 +544,9 @@ display: none;        right: auto;
         box-shadow: none;
         transition: none;
     }
-
+#menu-toggle-open {
+    display: block;
+}
     .sidebar .sidebar-header {
         display: block;
     }
