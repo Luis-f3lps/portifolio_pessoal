@@ -23,13 +23,17 @@ p {
     width: 90%;
     margin-bottom: 30px;
 }
+
 .header-text h1 span {
     color: #ff004f;
-}.header-text h1 {
+}
+
+.header-text h1 {
     font-size: 30px;
     margin-bottom: 1%;
     color: #ffffff;
 }
+
 /* --- Conteúdo Principal (Padrão Mobile) --- */
 .main-content {
     width: 100%;
@@ -523,69 +527,87 @@ p {
     transition: none;
     display: inline-grid;
 }
-/* Container da lista de experiências */
+
+/* Container Geral */
 .experience-container {
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Espaço entre cada experiência */
-    margin-top: 20px;
+    gap: 35px;
+    /* Espaço entre os projetos */
+    margin-top: 30px;
 }
 
-/* Cada linha de experiência */
+/* Item Individual */
 .experience-item {
     display: flex;
     gap: 20px;
-    align-items: flex-start;
 }
 
 /* Coluna da Data (Esquerda) */
 .exp-date {
-    flex-basis: 100px; /* Largura fixa para a data */
+    flex-basis: 100px;
     flex-shrink: 0;
     text-align: right;
     font-size: 14px;
-    color: #cfcfcf;
+    color: #fff;
+    /* Data em branco para destaque */
     font-weight: 600;
     display: flex;
     flex-direction: column;
-    line-height: 1.4;
+    line-height: 1.5;
+}
+
+.exp-date span:nth-child(2) {
+    color: #ff004f;
+    /* Cor do traço separador da data */
 }
 
 /* Coluna do Conteúdo (Direita) */
 .exp-content {
-    flex-basis: 100%;
-    border-left: 2px solid #333; /* Linha vertical cinza */
+    flex-grow: 1;
+    border-left: 2px solid #333;
+    /* Linha vertical */
     padding-left: 25px;
     position: relative;
 }
 
-/* Opcional: Bolinha na linha do tempo */
+/* Bolinha decorativa na linha do tempo */
 .exp-content::before {
     content: '';
     position: absolute;
-    left: -6px; /* Ajuste para centralizar na linha */
-    top: 5px;
+    left: -6px;
+    top: 0;
     width: 10px;
     height: 10px;
-    background: #ff004f; /* Sua cor de destaque */
+    background: #ff004f;
     border-radius: 50%;
 }
 
-/* Título da Empresa/Projeto */
+/* Título do Projeto */
 .exp-content h3 {
     font-size: 18px;
     font-weight: 600;
     color: #fff;
     margin-bottom: 5px;
+    margin-top: -4px;
+    /* Ajuste fino para alinhar com o topo da data */
 }
 
-/* Cargo/Função */
+/* Subtítulo / Cargo com Logo */
 .exp-content .exp-role {
-    display: block;
-    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
     color: #cfcfcf;
-    margin-bottom: 10px;
-    font-style: italic;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.exp-content .exp-role img {
+    width: 18px;
+    height: auto;
+    border-radius: 2px;
 }
 
 /* Descrição */
@@ -593,31 +615,171 @@ p {
     font-size: 14px;
     color: #ababab;
     line-height: 1.6;
+    max-width: 90%;
     text-align: justify;
 }
 
-/* Responsividade para Celular */
+/* Container Geral */
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    /* Espaço entre os projetos */
+    margin-top: 30px;
+}
+
+/* Item Individual */
+.experience-item {
+    display: flex;
+    gap: 20px;
+}
+
+/* Coluna da Data (Esquerda) */
+.exp-date {
+    flex-basis: 100px;
+    flex-shrink: 0;
+    text-align: right;
+    font-size: 14px;
+    color: #fff;
+    /* Data em branco para destaque */
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+/* Coluna do Conteúdo (Direita) */
+.exp-content {
+    flex-grow: 1;
+    border-left: 2px solid #333;
+    /* Linha vertical */
+    padding-left: 25px;
+    position: relative;
+}
+
+/* Bolinha decorativa na linha do tempo */
+.exp-content::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background: #ff004f;
+    border-radius: 50%;
+}
+
+/* Título do Projeto */
+.exp-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: -4px;
+    /* Ajuste fino para alinhar com o topo da data */
+}
+
+/* Subtítulo / Cargo com Logo */
+.exp-content .exp-role {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #cfcfcf;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.exp-content .exp-role img {
+    width: 18px;
+    height: auto;
+    border-radius: 2px;
+}
+
+/* --- ESTILOS PARA A ABA DE HABILIDADES (SKILLS) --- */
+
+.skills-grid-container {
+    display: grid;
+    /* 4 colunas em telas maiores */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.skill-card {
+    background-color: #333;
+    /* Fundo do cartão */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    background-color: #ff004f;
+    /* Sua cor de destaque no hover */
+}
+
+.skill-card img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
+}
+
+.skill-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.skill-card p {
+    font-size: 0.85rem;
+    color: #cfcfcf;
+    /* Certifica que a cor do parágrafo é clara, sobrepondo o p global */
+}
+
+/* Responsividade: Diminui para 2 colunas em telas menores */
+@media (max-width: 900px) {
+    .skills-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Responsividade: Apenas 1 coluna em celular */
+@media (max-width: 500px) {
+    .skills-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsividade Mobile */
 @media only screen and (max-width: 600px) {
     .experience-item {
         flex-direction: column;
         gap: 10px;
     }
-    
+
     .exp-date {
-        text-align: left;
         flex-direction: row;
-        gap: 5px;
+        gap: 8px;
+        text-align: left;
     }
 
     .exp-content {
         border-left: none;
-        border-top: 2px solid #333;
         padding-left: 0;
+        border-top: 1px solid #333;
         padding-top: 15px;
     }
 
     .exp-content::before {
-        display: none; /* Remove a bolinha no mobile */
+        display: none;
     }
 }
 
