@@ -23,7 +23,13 @@ p {
     width: 90%;
     margin-bottom: 30px;
 }
-
+.header-text h1 span {
+    color: #ff004f;
+}.header-text h1 {
+    font-size: 60px;
+    margin-bottom: 1%;
+    color: #ffffff;
+}
 /* --- Conteúdo Principal (Padrão Mobile) --- */
 .main-content {
     width: 100%;
