@@ -15,7 +15,7 @@ body {
 }
 
 p {
-    color: #353535;
+    color: #000000;
 }
 
 .container {
@@ -132,7 +132,7 @@ p {
 
 /* --- Serviços --- */
 #services {
-    background: #002b33;
+    background: #0b0f0f;
         padding: 30px;
 }
 
@@ -265,7 +265,7 @@ p {
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
-    background-color: #00accc;
+    background-color: #002b33;
 }
 
 .btn:hover {
@@ -334,7 +334,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #202028;
+    background-color: #0b0f0f;
     color: #f1f1f1;
     padding: 24px;
     border-radius: 8px;
@@ -523,7 +523,7 @@ p {
     width: 15%;
     min-width: 240px;
     height: 100vh;
-    background-color: #00404c;
+    background-color: #111418;
     padding: 24px;
     box-shadow: none;
     transition: none;
