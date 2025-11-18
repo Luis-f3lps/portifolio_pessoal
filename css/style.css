@@ -59,6 +59,7 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 60px;
 }
 
 .about-col-1 {
