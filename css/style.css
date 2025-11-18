@@ -858,8 +858,7 @@ only screen and (max-width: 2340px) and (min-height: 1080px) {
     #menu-toggle-close {
         display: block;
     }
-}
-/* Variáveis para fácil ajuste */
+}/* Variáveis para fácil ajuste */
 :root {
     --logo-height: 48px; /* Altura de todas as imagens */
     --logo-gap: 32px;    /* Espaçamento entre os logos */
@@ -867,6 +866,12 @@ only screen and (max-width: 2340px) and (min-height: 1080px) {
     --scroll-distance: 0px; /* Distância de rolagem, definida pelo JS */
 }
 
+body {
+    background-color: #0b0b0b; /* Fundo escuro como na imagem */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
 
 /* 1. Contêiner de Visualização (Recorta o conteúdo) */
 .logoloop-track {
