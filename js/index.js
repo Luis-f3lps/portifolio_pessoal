@@ -25,35 +25,38 @@ document.querySelectorAll(".submenu > a").forEach((menu) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-const innerContainer = document.querySelector('.logoloop-inner');
-        const originalList = document.getElementById('original-list');
+const innerContainer = document.getElementById('logoloop-inner');
+    const originalList = document.getElementById('original-list');
 
-        if (!innerContainer || !originalList) {
-            console.error('Elementos necessários para o logoloop não encontrados.');
-            return;
-        }
+    if (!innerContainer || !originalList) {
+        console.error('Elementos necessários (logoloop-inner ou original-list) não encontrados.');
+        return;
+    }
 
-        // 1. Clonar a lista o suficiente para criar o efeito contínuo
-        // Vamos duplicar a lista duas vezes, resultando em 3 cópias no total (original + 2 clones)
+    function setupLogoLoop() {
+        innerContainer.querySelectorAll('.logoloop-list[aria-hidden="true"]').forEach(clone => clone.remove());
+
         const totalClones = 2; 
+
         for (let i = 0; i < totalClones; i++) {
             const clone = originalList.cloneNode(true); // Clonar com todo o conteúdo
-            clone.removeAttribute('id'); // Remover o ID da cópia
-            clone.setAttribute('aria-hidden', 'true'); // Marcar como oculta para leitores de tela
+            clone.removeAttribute('id'); 
+            clone.setAttribute('aria-hidden', 'true'); // Ocultar para leitores de tela
             innerContainer.appendChild(clone);
         }
 
-        // 2. Calcular a largura total da lista original.
-        // O valor exato é necessário para que o CSS translate mova exatamente o 
-        // comprimento de uma lista para a esquerda (passando a primeira cópia).
-        // Usamos requestAnimationFrame para garantir que a largura seja calculada após o layout
+
         requestAnimationFrame(() => {
             const originalWidth = originalList.offsetWidth;
 
-            // 3. Aplicar a largura total como uma variável CSS no contêiner interno
-            // Isso define o valor 'var(--scroll-distance)' usado no @keyframes scroll-x
+
             innerContainer.style.setProperty('--scroll-distance', `${originalWidth}px`);
         });
+    }
+
+    setupLogoLoop();
+
+    window.addEventListener('resize', setupLogoLoop);
   // Seleciona os elementos
   const sidebar = document.querySelector('.sidebar');
   const openBtn = document.getElementById('menu-toggle-open');

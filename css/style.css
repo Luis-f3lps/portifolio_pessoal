@@ -59,7 +59,7 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 60px;
+    padding: 30px;
 }
 
 .about-col-1 {
@@ -859,34 +859,77 @@ only screen and (max-width: 2340px) and (min-height: 1080px) {
         display: block;
     }
 }
-/* Seu código CSS para classes Tailwind/personalizadas */
-/* Certifique-se de que a variável --logoloop-gap e --logoloop-logoHeight estão definidas */
-
-/* 1. Definir a animação de rolagem */
-@keyframes scroll-x {
-  from {
-    /* Começa na posição 0 */
-    transform: translate3d(0, 0, 0); 
-  }
-  to {
-    /* Desloca para a esquerda pelo tamanho total do primeiro grupo (ul) */
-    /* Este valor exato será determinado dinamicamente pelo JS, 
-       mas definimos uma animação aqui para que o JS possa modificá-la ou aplicá-la */
-    transform: translate3d(calc(-1 * var(--scroll-distance)), 0, 0); 
-  }
+/* Variáveis para fácil ajuste */
+:root {
+    --logo-height: 48px; /* Altura de todas as imagens */
+    --logo-gap: 32px;    /* Espaçamento entre os logos */
+    --scroll-duration: 40s; /* Duração da rolagem completa */
+    --scroll-distance: 0px; /* Distância de rolagem, definida pelo JS */
 }
 
-/* 2. Aplicar a animação ao elemento interno que contém todas as listas (div com class="flex w-max") */
-/* Vou usar a classe 'logoloop-inner' para aplicar a animação */
+/* 1. Contêiner de Visualização (Recorta o conteúdo) */
+.logoloop-track {
+    width: 100%;
+    overflow: hidden; /* **Obrigatório** para esconder a parte que não está na tela */
+    white-space: nowrap; /* Impede que os itens quebrem linha */
+    padding: 20px 0;
+    box-sizing: border-box;
+    /* Ajuste para que as imagens brancas apareçam em fundo escuro */
+    filter: invert(1); 
+}
+
+/* 2. Contêiner Interno (Será animado) */
 .logoloop-inner {
-    /* Define uma variável CSS para a duração para facilitar ajustes */
-    --scroll-duration: 40s; 
+    display: flex;
+    width: max-content; /* Permite que o conteúdo se estenda horizontalmente */
+    will-change: transform;
     
     /* Aplica a animação: nome, duração, linear, infinito */
     animation: scroll-x var(--scroll-duration) linear infinite;
+    
+    /* Pausar animação quando o mouse passar por cima do track */
+    .logoloop-track:hover & {
+        animation-play-state: paused;
+    }
 }
 
-/* 3. Pausar a animação no hover */
-.logoloop-container:hover .logoloop-inner {
-    animation-play-state: paused;
+/* 3. Estilo da Lista de Logos e Itens */
+.logoloop-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.logoloop-item {
+    margin-right: var(--logo-gap);
+    height: var(--logo-height);
+    display: flex; /* Para centralizar verticalmente a imagem */
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logoloop-item:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.logoloop-item img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    /* Adicionando o cursor pointer para simular um link/botão */
+    cursor: pointer;
+}
+
+/* 4. A Animação de Rolagem */
+@keyframes scroll-x {
+    from {
+        /* Posição inicial: 0 */
+        transform: translate3d(0, 0, 0); 
+    }
+    to {
+        /* Posição final: Rola para a esquerda exatamente o tamanho de uma lista */
+        transform: translate3d(calc(-1 * var(--scroll-distance)), 0, 0); 
+    }
 }
