@@ -14,22 +14,26 @@
 </head>
 
 <body>
-    <aside class="sidebar">
+<button id="menu-toggle-open" class="fa-solid fa-bars"></button>
 
-        <div class="sidebar-header">
-            <span>MENU PRINCIPAL</span>
-        </div>
+<aside class="sidebar">
+    
+    <button id="menu-toggle-close" class="fa-solid fa-times"></button>
 
-        <nav class="sidebar-nav">
-            <ul>
-                <li><a href="#header"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="#about"><i class="fa-solid fa-user"></i> Sobre</a></li>
-                <li><a href="#services"><i class="fa-solid fa-briefcase"></i> Trabalhos</a></li>
-                <li><a href="#portifolio"><i class="fa-solid fa-certificate"></i> Certificação</a></li>
-                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contato</a></li>
-            </ul>
-        </nav>
-    </aside>
+    <div class="sidebar-header">
+        <span>MENU PRINCIPAL</span>
+    </div>
+
+    <nav class="sidebar-nav">
+        <ul>
+            <li><a href="#header"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-user"></i> Sobre</a></li>
+            <li><a href="#services"><i class="fa-solid fa-briefcase"></i> Trabalhos</a></li>
+            <li><a href="#portifolio"><i class="fa-solid fa-certificate"></i> Certificação</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contato</a></li>
+        </ul>
+    </nav>
+</aside>
 
     <main class="main-content">
         <div class="container">
@@ -114,8 +118,8 @@
                         <img src="images/CivPortrait-Rus.jpg" class="logo">
                         <br>
                         <h2>Comparador de Unidades (Age of Empires 4)</h2><br>
-                        <p>Criei uma ferramenta web para fãs de Age of Empires 4. Ela permite que o usuário escolha duas
-                            civilizações e compare suas unidades únicas...</p><br>
+                        <p>Ferramenta web que compara unidades únicas de duas civilizações de Age of Empires 4...</p>
+                        <br>
                     </div>
 
                     <div class="project-item" data-image="images/pokedex.png" data-title="Pokedex"
@@ -128,8 +132,9 @@
                         <img src="images/pokedex.png" class="logo">
                         <br>
                         <h2>Pokedex</h2><br>
-                        <p>Criei um site Pokedex que utiliza uma API pública...</p><br>
+                        <p>Site Pokedex que consome uma API pública para exibir dados de Pokémon...</p><br>
                     </div>
+
                     <div class="project-item" data-image="images/treino.png" data-title="Sistema de Montar Treino"
                         data-date="17 de Novembro de 2025"
                         data-description="Desenvolvi um sistema web interativo para o IFNMG Campus Salinas (identificado pelo logo 'logoIFNMG') focado na montagem de fichas de treino personalizadas. A plataforma permite que usuários filtrem exercícios por grupo muscular, visualizem GIFs de execução e adicionem os exercícios selecionados a uma lista. O sistema também inclui campos para identificar o aluno e o instrutor, gerando ao final uma 'string' de treino que pode ser salva ou compartilhada."
@@ -140,9 +145,10 @@
                         <img src="images/treino.png" class="logo">
                         <br>
                         <h2>Sistema de Montar Treino</h2><br>
-                        <p>Desenvolvi um sistema web interativo para o IFNMG Campus Salinas, focado na montagem de
-                            fichas de treino...</p><br>
+                        <p>Sistema web para montar fichas de treino personalizadas, com filtros de exercícios e
+                            visualização de GIFs...</p><br>
                     </div>
+
                     <div class="project-item" data-image="images/sistema de inventario.png"
                         data-title="Sistema de Agendamento de Aulas em Laboratório" data-date="17 de Novembro de 2025"
                         data-description="Desenvolvi um sistema de agendamento de aulas em laboratórios. A plataforma é baseada em papéis, com menus ocultos para Técnico e Administração. Esta é a 'Home' do professor (ex: 'Renato Trezes'), que exibe um calendário visual (Novembro 2025) com as aulas autorizadas (com tooltips mostrando a disciplina e laboratório) e um painel 'Minhas Solicitações de Aula'. Este painel é uma tabela que detalha o laboratório, disciplina, data, status (com tags visuais para 'autorizado', 'analisando', 'nao_autorizado'), se há pedido de 'Apoio Técnico' e um link para o 'Roteiro' da aula."
@@ -153,10 +159,10 @@
                         <img src="images/sistema-aulas.png" class="logo">
                         <br>
                         <h2>Sistema de Agendamento de Aulas em Laboratório</h2><br>
-                        <p>Desenvolvi um sistema de agendamento de aulas em laboratórios. A plataforma, baseada em
-                            papéis, exibe um calendário de aulas autorizadas e uma tabela para o professor rastrear o
-                            status de suas solicitações...</p><br>
+                        <p>Sistema de agendamento de aulas em laboratórios com calendário, rastreamento de status e
+                            gerenciamento por papéis...</p><br>
                     </div>
+
                     <div class="project-item" data-image="images/game.png" data-title="Game of Science (Quiz)"
                         data-date="17 de Novembro de 2025"
                         data-description="Desenvolvi um quiz interativo chamado 'Game of Science'. A aplicação, renderizada em um container principal (id='root'), exibe um logo, uma pergunta (ex: 'Qual artista brasileiro canta a música Garota Ipanema?'), uma grade de alternativas (a, b, c, d) e um botão para 'Pular Pergunta'. O layout é limpo e focado na experiência do usuário de responder ao quiz."
@@ -167,8 +173,8 @@
                         <img src="images/gameofscience.png" class="logo">
                         <br>
                         <h2>Game of Science (Quiz)</h2><br>
-                        <p>Desenvolvi um quiz interativo chamado 'Game of Science'. A aplicação exibe um logo, uma
-                            pergunta, alternativas e um botão para pular...</p><br>
+                        <p>Quiz interativo em React ('Game of Science') com sistema de perguntas, alternativas e opção
+                            de pular...</p><br>
                     </div>
 
                     <div class="project-item" data-image="images/forca.png" data-title="Jogo da Forca"
@@ -181,9 +187,9 @@
                         <img src="images/forca.png" class="logo">
                         <br>
                         <h2>Jogo da Forca</h2><br>
-                        <p>Desenvolvi um clássico Jogo da Forca interativo. O sistema escolhe uma palavra secreta e
-                            exibe uma dica...</p><br>
+                        <p>Jogo da Forca interativo com dicas, teclado virtual e rastreamento de tentativas...</p><br>
                     </div>
+
                     <div class="project-item" data-image="images/age02.png"
                         data-title="Guia de Eras - Age of Empires IV" data-date="17 de Novembro de 2025"
                         data-description="Criei uma página-guia para o jogo 'Age of Empires IV', focada em explicar as diferentes eras do jogo. A página utiliza um layout flexbox para dividir o conteúdo em quatro colunas, uma para cada era: Era das Trevas, Era Feudal, Era do Castelo e Era Imperial. Cada seção detalha o foco principal, como coleta de recursos na primeira era e unidades poderosas na última. A página também serve como um hub, com botões de navegação para outras seções do site, como 'Civilizações', 'Como jogar' e 'Builds'."
@@ -194,8 +200,8 @@
                         <img src="images/aoe4-guia.png" class="logo">
                         <br>
                         <h2>Guia de Eras - Age of Empires IV</h2><br>
-                        <p>Criei uma página-guia para o jogo 'Age of Empires IV', explicando o foco de cada uma das
-                            quatro eras do jogo (Trevas, Feudal, Castelo, Imperial)...</p><br>
+                        <p>Guia web para 'Age of Empires IV' detalhando o foco principal das quatro eras do jogo...</p>
+                        <br>
                     </div>
 
                     <div class="project-item" data-image="images/projetos.png"
@@ -210,8 +216,7 @@
                         <img src="images/portifolio-ifnmg.png" class="logo">
                         <br>
                         <h2>Portfólio de Projetos de Inovação (IFNMG Salinas)</h2><br>
-                        <p>Desenvolvi o portfólio web da Agência de Projetos de Inovação do IFNMG. A plataforma
-                            apresenta um banco de dados de pesquisa interativo com filtros e visualização de dados em
+                        <p>Portfólio web para Agência de Inovação do IFNMG, com banco de dados de projetos, filtros e
                             gráficos...</p><br>
                     </div>
                 </div>
@@ -408,16 +413,6 @@
             </div>
     </main>
     <script src="js/index.js"></script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu() {
-            sidemenu.style.right = "-200px";
-        }
-        function clossmenu() {
-            sidemenu.style.right = "-800px";
-        }
-    </script>
-
 </body>
 
 </html>

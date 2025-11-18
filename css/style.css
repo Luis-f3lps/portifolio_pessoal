@@ -795,4 +795,99 @@ body {
 
 .main-content h1 {
     margin-bottom: 20px;
+}/* --- ESTILOS DOS BOTÕES DE CONTROLE (FORA DO MEDIA QUERY) --- */
+
+/* Botão "Hambúrguer" (Abrir) */
+#menu-toggle-open {
+    display: none; /* Escondido em telas grandes */
+    position: fixed; /* Fixo na tela */
+    top: 20px;
+    right: 20px;
+    font-size: 2rem; 
+    color: #333; /* Ajuste a cor conforme o fundo do seu site */
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 999; 
+}
+
+/* Botão "X" (Fechar) */
+#menu-toggle-close {
+    display: none; /* Escondido por padrão */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001; /* Acima da sidebar */
+}
+
+/* --- ESTILOS DA SIDEBAR PARA MOBILE --- */
+@media (max-width: 768px) {
+    
+    /* 1. Mostra o botão de abrir o menu */
+    #menu-toggle-open {
+        display: block;
+    }
+
+    /* 2. Mostra o botão de fechar (ele já está dentro da sidebar) */
+    #menu-toggle-close {
+        display: block;
+    }
+
+    /* 3. Estiliza a sidebar (o menu que desliza) */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Começa escondida fora da tela */
+        width: 80vw;  /* Ocupa 80% da largura da tela */
+        height: 100vh; /* Ocupa 100% da altura */
+        background-color: #E60073; /* O tom de rosa vibrante da imagem */
+        z-index: 1000;
+        transition: right 0.4s ease; /* Animação de "slide" */
+        
+        padding: 20px;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+    }
+
+    /* 4. Classe que o JavaScript vai adicionar para ABRIR o menu */
+    .sidebar.sidebar-open {
+        right: 0; /* Move a sidebar para a tela */
+    }
+
+    /* 5. Esconde o "MENU PRINCIPAL" (não aparece na imagem) */
+    .sidebar .sidebar-header {
+        display: none;
+    }
+
+    /* 6. Estiliza a lista de links */
+    .sidebar-nav {
+        margin-top: 80px; /* Dá espaço para o botão 'X' */
+    }
+
+    .sidebar-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 25px; /* Espaçamento entre os links */
+    }
+
+    /* 7. Estiliza os links (<a>) */
+    .sidebar-nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 2rem; /* Fonte bem grande */
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* 8. Esconde os ícones (fa-house, etc.) dos links */
+    .sidebar-nav a i {
+        display: none;
+    }
 }

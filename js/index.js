@@ -25,8 +25,26 @@ document.querySelectorAll(".submenu > a").forEach((menu) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+        
+        // Seleciona os elementos
+        const sidebar = document.querySelector('.sidebar');
+        const openBtn = document.getElementById('menu-toggle-open');
+        const closeBtn = document.getElementById('menu-toggle-close');
 
-    const projectItems = document.querySelectorAll('.project-item');
+        // Função para abrir o menu
+        function openSidebar() {
+            sidebar.classList.add('sidebar-open');
+        }
+
+        // Função para fechar o menu
+        function closeSidebar() {
+            sidebar.classList.remove('sidebar-open');
+        }
+
+        // Adiciona os eventos de clique
+        openBtn.addEventListener('click', openSidebar);
+        closeBtn.addEventListener('click', closeSidebar);
+        const projectItems = document.querySelectorAll('.project-item');
     const modal = document.getElementById('project-modal');
     const overlay = document.getElementById('modal-overlay');
     const closeModalBtn = document.querySelector('.close-modal');
