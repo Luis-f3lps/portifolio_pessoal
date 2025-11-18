@@ -121,7 +121,8 @@ p {
 
 /* --- Serviços --- */
 #services {
-    padding: 60;
+    background: #ebebeb;
+    padding: 24px;
 }
 
 .services-list {
@@ -132,7 +133,7 @@ p {
 }
 
 .services-list div {
-    background: #151515;
+    background: #002b33;
     padding: 40px;
     font-size: 13PX;
     font-weight: 300px;
@@ -150,7 +151,7 @@ p {
 
 .services-list div p {
     text-align: justify;
-    color: black;
+    color: #ebebeb;
 }
 
 .services-list div:hover {
@@ -193,6 +194,8 @@ p {
     cursor: pointer;
     margin: 15px;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+        transform: translate(-50%, -50%);
+
 }
 
 .sub-title-type-2 {
