@@ -859,3 +859,34 @@ only screen and (max-width: 2340px) and (min-height: 1080px) {
         display: block;
     }
 }
+/* Seu código CSS para classes Tailwind/personalizadas */
+/* Certifique-se de que a variável --logoloop-gap e --logoloop-logoHeight estão definidas */
+
+/* 1. Definir a animação de rolagem */
+@keyframes scroll-x {
+  from {
+    /* Começa na posição 0 */
+    transform: translate3d(0, 0, 0); 
+  }
+  to {
+    /* Desloca para a esquerda pelo tamanho total do primeiro grupo (ul) */
+    /* Este valor exato será determinado dinamicamente pelo JS, 
+       mas definimos uma animação aqui para que o JS possa modificá-la ou aplicá-la */
+    transform: translate3d(calc(-1 * var(--scroll-distance)), 0, 0); 
+  }
+}
+
+/* 2. Aplicar a animação ao elemento interno que contém todas as listas (div com class="flex w-max") */
+/* Vou usar a classe 'logoloop-inner' para aplicar a animação */
+.logoloop-inner {
+    /* Define uma variável CSS para a duração para facilitar ajustes */
+    --scroll-duration: 40s; 
+    
+    /* Aplica a animação: nome, duração, linear, infinito */
+    animation: scroll-x var(--scroll-duration) linear infinite;
+}
+
+/* 3. Pausar a animação no hover */
+.logoloop-container:hover .logoloop-inner {
+    animation-play-state: paused;
+}
