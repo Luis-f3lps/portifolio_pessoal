@@ -511,25 +511,17 @@ display: inline;}
     color: #f0f0f0;
 }
 
-/* --- Media Query para Mobile (Ajustes finos) --- */
-@media (max-width: 768px) {
-    .services-list {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .sidebar {
+        position: static;
+        width: 15%;
+        min-width: 240px;
+        height: 100vh;
+        background-color: #2d3748;
+        /* Cor desktop */
+        box-shadow: none;
+        transition: none;
     }
 
-    .project-item {
-        padding: 20px;
-    }
-
-    .project-item h2 {
-        font-size: 1.25rem;
-    }
-
-    .project-item p {
-        font-size: 0.9rem;
-    }
-}
 
 /* --- Layout Desktop (Media Query) --- */
 @media only screen and (max-width: 2532px) and (min-height: 1170px), only screen and (max-width: 2340px) and (min-height: 1080px) {
