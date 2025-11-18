@@ -31,7 +31,7 @@ p {
     height: 100vh;
     overflow-y: auto;
     padding: 30px;
-    background-color: #f4f7fa;
+    background-color: #ffffff;
     color: #1a202c;
 }
 
@@ -107,7 +107,7 @@ p {
 }
 
 .tab-contents ul li span {
-    color: #1cff64;
+    color: #00accc;
     font-size: 14px;
 }
 
@@ -132,7 +132,7 @@ p {
 }
 
 .services-list div {
-    background: #ffffff;
+    background: #151515;
     padding: 40px;
     font-size: 13PX;
     font-weight: 300px;
@@ -156,7 +156,7 @@ p {
 .services-list div:hover {
     background: #ff004f;
     transform: translateY(-10px);
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 /* --- Portifolio / Certificados --- */
@@ -190,6 +190,9 @@ p {
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    cursor: pointer;
+    margin: 15px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .sub-title-type-2 {
@@ -221,7 +224,7 @@ p {
 
 .layer a {
     margin-top: 20px;
-    color: #ff004f;
+    color: #002b33;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -252,7 +255,7 @@ p {
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
-    background-color: rgb(209, 58, 12);
+    background-color: #00accc;
 }
 
 .btn:hover {
@@ -391,9 +394,11 @@ p {
     display: flex;
     gap: 15px;
 }
-    .sidebar {
-      display: block;
-    }
+
+.sidebar {
+    display: block;
+}
+
 .modal .links a {
     display: none;
     text-decoration: none;
@@ -447,7 +452,7 @@ p {
 }
 
 #menu-toggle-close {
-    display: block;
+    display: none;
     top: 30px;
     right: 750px;
     font-size: 2.2rem;
@@ -460,7 +465,8 @@ p {
 
 .sidebar.sidebar-open {
     right: 0;
-display: inline;}
+    display: inline;
+}
 
 .sidebar .sidebar-header {
     display: none;
@@ -508,19 +514,22 @@ display: inline;}
     color: #f0f0f0;
 }
 
-    .sidebar {
-        position: static;
-        width: 15%;
-        min-width: 240px;
-        height: 100vh;
-        background-color: #111418;
-padding: 24px;        box-shadow: none;
-        transition: none;
-    }
+.sidebar {
+    position: static;
+    width: 15%;
+    min-width: 240px;
+    height: 100vh;
+    background-color: #00404c;
+    padding: 24px;
+    box-shadow: none;
+    transition: none;
+    display: inline-grid;
+}
 
 
 /* --- Layout Desktop (Media Query) --- */
-@media only screen and (max-width: 2532px) and (min-height: 1170px), only screen and (max-width: 2340px) and (min-height: 1080px) {
+@media only screen and (max-width: 2532px) and (min-height: 1170px),
+only screen and (max-width: 2340px) and (min-height: 1080px) {
 
     body {
         display: flex;
@@ -535,7 +544,8 @@ padding: 24px;        box-shadow: none;
     /* Restaura Sidebar Desktop */
     .sidebar {
         position: static;
-display: none;        right: auto;
+        display: none;
+        right: auto;
         width: 15%;
         min-width: 240px;
         height: 100vh;
@@ -544,9 +554,11 @@ display: none;        right: auto;
         box-shadow: none;
         transition: none;
     }
-#menu-toggle-open {
-    display: block;
-}
+
+    #menu-toggle-open {
+        display: block;
+    }
+
     .sidebar .sidebar-header {
         display: block;
     }
@@ -584,5 +596,9 @@ display: none;        right: auto;
     .sidebar-nav a:hover {
         background-color: #4a5568;
         color: #ffffff;
+    }
+
+    #menu-toggle-close {
+        display: block;
     }
 }
