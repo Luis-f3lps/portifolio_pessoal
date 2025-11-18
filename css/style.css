@@ -14,7 +14,7 @@ body {
 }
 
 p {
-    color: #888888;
+    color: #353535;
 }
 
 .container {
@@ -26,7 +26,7 @@ p {
 .header-text h1 span {
     color: #ff004f;
 }.header-text h1 {
-    font-size: 60px;
+    font-size: 30px;
     margin-bottom: 1%;
     color: #ffffff;
 }
@@ -473,7 +473,6 @@ p {
 
 .sidebar .sidebar-header {
     display: none;
-    /* Escondido no mobile */
 }
 
 .sidebar-nav {
@@ -481,8 +480,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 80px;
-    /* Espaço para 'X' */
 }
 
 .sidebar-nav ul {
@@ -502,14 +499,12 @@ p {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
-    /* Sem padding extra */
     border-radius: 0;
     transition: none;
 }
 
 .sidebar-nav a i {
     display: none;
-    /* Esconder ícones no mobile */
 }
 
 .sidebar-nav a:hover {
@@ -528,7 +523,103 @@ p {
     transition: none;
     display: inline-grid;
 }
+/* Container da lista de experiências */
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espaço entre cada experiência */
+    margin-top: 20px;
+}
 
+/* Cada linha de experiência */
+.experience-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Coluna da Data (Esquerda) */
+.exp-date {
+    flex-basis: 100px; /* Largura fixa para a data */
+    flex-shrink: 0;
+    text-align: right;
+    font-size: 14px;
+    color: #cfcfcf;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+}
+
+/* Coluna do Conteúdo (Direita) */
+.exp-content {
+    flex-basis: 100%;
+    border-left: 2px solid #333; /* Linha vertical cinza */
+    padding-left: 25px;
+    position: relative;
+}
+
+/* Opcional: Bolinha na linha do tempo */
+.exp-content::before {
+    content: '';
+    position: absolute;
+    left: -6px; /* Ajuste para centralizar na linha */
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background: #ff004f; /* Sua cor de destaque */
+    border-radius: 50%;
+}
+
+/* Título da Empresa/Projeto */
+.exp-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+/* Cargo/Função */
+.exp-content .exp-role {
+    display: block;
+    font-size: 14px;
+    color: #cfcfcf;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+/* Descrição */
+.exp-content p {
+    font-size: 14px;
+    color: #ababab;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Responsividade para Celular */
+@media only screen and (max-width: 600px) {
+    .experience-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .exp-date {
+        text-align: left;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .exp-content {
+        border-left: none;
+        border-top: 2px solid #333;
+        padding-left: 0;
+        padding-top: 15px;
+    }
+
+    .exp-content::before {
+        display: none; /* Remove a bolinha no mobile */
+    }
+}
 
 /* --- Layout Desktop (Media Query) --- */
 @media only screen and (max-width: 2532px) and (min-height: 1170px),
