@@ -25,82 +25,82 @@ document.querySelectorAll(".submenu > a").forEach((menu) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-        
-        // Seleciona os elementos
-        const sidebar = document.querySelector('.sidebar');
-        const openBtn = document.getElementById('menu-toggle-open');
-        const closeBtn = document.getElementById('menu-toggle-close');
 
-        // Função para abrir o menu
-        function openSidebar() {
-            sidebar.classList.add('sidebar-open');
-        }
+  // Seleciona os elementos
+  const sidebar = document.querySelector('.sidebar');
+  const openBtn = document.getElementById('menu-toggle-open');
+  const closeBtn = document.getElementById('menu-toggle-close');
 
-        // Função para fechar o menu
-        function closeSidebar() {
-            sidebar.classList.remove('sidebar-open');
-        }
+  // Função para abrir o menu
+  function openSidebar() {
+    sidebar.classList.add('sidebar-open');
+  }
 
-        // Adiciona os eventos de clique
-        openBtn.addEventListener('click', openSidebar);
-        closeBtn.addEventListener('click', closeSidebar);
-        const projectItems = document.querySelectorAll('.project-item');
-    const modal = document.getElementById('project-modal');
-    const overlay = document.getElementById('modal-overlay');
-    const closeModalBtn = document.querySelector('.close-modal');
+  // Função para fechar o menu
+  function closeSidebar() {
+    sidebar.classList.remove('sidebar-open');
+  }
 
-    const modalImage = document.getElementById('modal-image');
-    const modalTitle = document.getElementById('modal-title');
-    const modalDate = document.getElementById('modal-date');
-    const modalDescription = document.getElementById('modal-description');
-    const modalDetails = document.getElementById('modal-details');
-    const modalLinkProject = document.getElementById('modal-link-project');
-    const modalLinkRepo = document.getElementById('modal-link-repo');
-    const modalLinkLinkedin = document.getElementById('modal-link-linkedin');
+  // Adiciona os eventos de clique
+  openBtn.addEventListener('click', openSidebar);
+  closeBtn.addEventListener('click', closeSidebar);
+  const projectItems = document.querySelectorAll('.project-item');
+  const modal = document.getElementById('project-modal');
+  const overlay = document.getElementById('modal-overlay');
+  const closeModalBtn = document.querySelector('.close-modal');
 
-
-    projectItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const image = item.dataset.image;
-            const title = item.dataset.title;
-            const date = item.dataset.date;
-            const description = item.dataset.description;
-            const details = item.dataset.details;
-            const linkProject = item.dataset.linkProject;
-            const linkRepo = item.dataset.linkRepo;
-            const linkLinkedin = item.dataset.linkLinkedin;
-
-            modalImage.src = image;
-            modalTitle.textContent = title;
-            modalDate.textContent = date;
-            modalDescription.innerHTML = description; // Usamos innerHTML para permitir <br>
-            modalDetails.innerHTML = details;
+  const modalImage = document.getElementById('modal-image');
+  const modalTitle = document.getElementById('modal-title');
+  const modalDate = document.getElementById('modal-date');
+  const modalDescription = document.getElementById('modal-description');
+  const modalDetails = document.getElementById('modal-details');
+  const modalLinkProject = document.getElementById('modal-link-project');
+  const modalLinkRepo = document.getElementById('modal-link-repo');
+  const modalLinkLinkedin = document.getElementById('modal-link-linkedin');
 
 
-            toggleLink(modalLinkProject, linkProject);
-            toggleLink(modalLinkRepo, linkRepo);
-            toggleLink(modalLinkLinkedin, linkLinkedin);
+  projectItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const image = item.dataset.image;
+      const title = item.dataset.title;
+      const date = item.dataset.date;
+      const description = item.dataset.description;
+      const details = item.dataset.details;
+      const linkProject = item.dataset.linkProject;
+      const linkRepo = item.dataset.linkRepo;
+      const linkLinkedin = item.dataset.linkLinkedin;
 
-            modal.classList.add('active');
-            overlay.classList.add('active');
-        });
+      modalImage.src = image;
+      modalTitle.textContent = title;
+      modalDate.textContent = date;
+      modalDescription.innerHTML = description; // Usamos innerHTML para permitir <br>
+      modalDetails.innerHTML = details;
+
+
+      toggleLink(modalLinkProject, linkProject);
+      toggleLink(modalLinkRepo, linkRepo);
+      toggleLink(modalLinkLinkedin, linkLinkedin);
+
+      modal.classList.add('active');
+      overlay.classList.add('active');
     });
+  });
 
-    const closeModal = () => {
-        modal.classList.remove('active');
-        overlay.classList.remove('active');
-    };
+  const closeModal = () => {
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
+  };
 
-    const toggleLink = (element, link) => {
-        if (link) {
-            element.href = link;
-            element.style.display = 'inline-block'; // Mostra o botão
-        } else {
-            element.style.display = 'none'; // Esconde o botão
-        }
-    };
+  const toggleLink = (element, link) => {
+    if (link) {
+      element.href = link;
+      element.style.display = 'inline-block'; // Mostra o botão
+    } else {
+      element.style.display = 'none'; // Esconde o botão
+    }
+  };
 
-    closeModalBtn.addEventListener('click', closeModal); // Clicar no 'X'
-    overlay.addEventListener('click', closeModal);      // Clicar fora do modal (no overlay)
+  closeModalBtn.addEventListener('click', closeModal); // Clicar no 'X'
+  overlay.addEventListener('click', closeModal);      // Clicar fora do modal (no overlay)
 
 });
