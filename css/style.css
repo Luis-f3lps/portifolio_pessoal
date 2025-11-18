@@ -129,7 +129,7 @@ p {
 
 .services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 40px;
     margin-top: 40px;
 }
@@ -177,7 +177,7 @@ p {
 
 .work-list-certificados {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     margin-top: 40px;
 }
@@ -449,7 +449,6 @@ p {
 
 #menu-toggle-close {
     display: block;
-    position: absolute;
     top: 30px;
     right: 750px;
     font-size: 2.2rem;
@@ -462,8 +461,7 @@ p {
 
 .sidebar.sidebar-open {
     right: 0;
-    /* Mostrar */
-}
+display: inline;}
 
 .sidebar .sidebar-header {
     display: none;
@@ -541,14 +539,13 @@ p {
     }
 
     .main-content {
-        width: 85%;
+        width: 100%;
     }
 
     /* Restaura Sidebar Desktop */
     .sidebar {
         position: static;
-        /* Posição normal */
-        right: auto;
+display: none;        right: auto;
         width: 15%;
         min-width: 240px;
         height: 100vh;
