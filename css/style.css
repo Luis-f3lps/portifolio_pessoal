@@ -20,7 +20,7 @@ p {
 .container {
     margin-right: auto;
     margin-left: auto;
-    width: 90%;
+    width: 80%;
     margin-bottom: 30px;
 }
 
@@ -875,7 +875,7 @@ body {
 
 /* 1. Contêiner de Visualização (Recorta o conteúdo) */
 .logoloop-track {
-    width: 85%;
+    width: 110%;
     overflow: hidden; /* **Obrigatório** para esconder a parte que não está na tela */
     white-space: nowrap; /* Impede que os itens quebrem linha */
     padding: 20px 0;
