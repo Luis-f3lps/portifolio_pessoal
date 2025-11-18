@@ -14,29 +14,33 @@
 </head>
 
 <body>
-<button id="menu-toggle-open" class="fa-solid fa-bars"></button>
+    <button id="menu-toggle-open" class="fa-solid fa-bars"></button>
 
-<aside class="sidebar">
-    
-    <button id="menu-toggle-close" class="fa-solid fa-times"></button>
+    <aside class="sidebar">
 
-    <div class="sidebar-header">
-        <span>MENU PRINCIPAL</span>
-    </div>
+        <button id="menu-toggle-close" class="fa-solid fa-times"></button>
 
-    <nav class="sidebar-nav">
-        <ul>
-            <li><a href="#header"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li><a href="#about"><i class="fa-solid fa-user"></i> Sobre</a></li>
-            <li><a href="#services"><i class="fa-solid fa-briefcase"></i> Trabalhos</a></li>
-            <li><a href="#portifolio"><i class="fa-solid fa-certificate"></i> Certificação</a></li>
-            <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contato</a></li>
-        </ul>
-    </nav>
-</aside>
+        <div class="sidebar-header">
+            <span>MENU PRINCIPAL</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#header"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i> Sobre</a></li>
+                <li><a href="#services"><i class="fa-solid fa-briefcase"></i> Trabalhos</a></li>
+                <li><a href="#portifolio"><i class="fa-solid fa-certificate"></i> Certificação</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contato</a></li>
+            </ul>
+        </nav>
+    </aside>
 
     <main class="main-content">
         <div class="container">
+            <div class="header-text">
+                <h1>Olá, sou <span>Luis Santiago</span></h1>
+                <p>Técnico em Informática e Analista de Sistemas</p>
+            </div>
             <div class="row">
                 <div class="about-col-1">
                     <img src="images/a2.jpg">
@@ -80,10 +84,6 @@
                             <li><span>03/2024 a 12/2024</span><br><br><img src="images/if.png" alt="Descrição da imagem"
                                     width="20" height="20"> PROGRAMA DE BOLSAS DE APOIO TÉCNICO (BAT) À INOVAÇÃO E A
                                 EXTENSÃO TECNOLÓGICA DO IFNMG</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Education">
-                        <ul>
                             <li><span>08/2022 a 10/2022</span><br><br><img src="images/if.png" alt="Descrição da imagem"
                                     width="20" height="20"> Estudo de caso: digitalização e organização do banco de
                                 dados do Setor de Pesquisa,
@@ -98,6 +98,24 @@
                                 laboratórios do Campus Salinas</li><br>
                         </ul>
                     </div>
+                    <div class="tab-contents" id="Education">
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>set de 2025 - ago de 2026</span><br><br><img src="images/pucrs.png"
+                                        alt="Logo PUCRS" width="20" height="20"> PUCRS - Pontifícia Universidade
+                                    Católica do Rio Grande do Sul<br>Curso de Pós-Graduação Lato Sensu User Experience
+                                    Design and Beyond, Tecnologia da Informação</li>
+                                <li><span>fev de 2019 - out de 2024</span><br><br><img src="images/if.png"
+                                        alt="Logo IFNMG" width="20" height="20"> IFNMG - Instituto Federal do Norte de
+                                    Minas Gerais, Campus Salinas<br>Bacharelado em sistemas de informação, Ciência da
+                                    Computação</li>
+                                <li><span>jan de 2016 - dez de 2016</span><br><br><img src="images/if.png"
+                                        alt="Logo IFNMG" width="20" height="20"> IFNMG - Instituto Federal do Norte de
+                                    Minas Gerais, Campus Salinas<br>Técnico em Informática Integrado ao Ensino Médio,
+                                    Programação de Computadores</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,7 +127,7 @@
                 <div class="services-list">
 
                     <div class="project-item" data-image="images/age-of-empires-4.vercel.app.png"
-                        data-date="17 de Novembro de 2025"
+                        data-title="Age of Empires 4" data-date="17 de Novembro de 2025"
                         data-description="Criei uma ferramenta web para fãs de Age of Empires 4. Ela permite que o usuário escolha duas civilizações da lista (como Russos, Legado de Zhu Xi, Franceses, etc.) e clique em 'Procurar'. A aplicação então busca e exibe, lado a lado, as unidades únicas de cada civilização em tabelas detalhadas. As tabelas mostram o nome da unidade, sua habilidade especial, contra o que ela é forte e contra o que ela é fraca. O sistema também possui um seletor de idiomas (Português, Espanhol, Inglês) e atualiza dinamicamente as imagens das civilizações selecionadas."
                         data-details="Tecnologias: HTML, CSS, JavaScript (Async/Await, Fetch API). O sistema é multi-idioma (PT, ES, EN) e consome uma API backend (endpoints como /civilizacoes_ptbr e /unidades_ptbr) para buscar os dados do jogo dinamicamente."
                         data-link-project="/" data-link-repo="https://github.com/Luis-f3lps/aoe4-comparator"

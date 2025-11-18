@@ -394,7 +394,9 @@ p {
     display: flex;
     gap: 15px;
 }
-
+    .sidebar {
+      display: block;
+    }
 .modal .links a {
     display: none;
     text-decoration: none;
