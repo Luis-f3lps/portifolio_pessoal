@@ -876,6 +876,11 @@ only screen and (max-width: 2340px) and (min-height: 1080px) {
     box-sizing: border-box;
     /* Ajuste para que as imagens brancas apareçam em fundo escuro */
     filter: invert(1); 
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    margin-bottom: 30px;
+
 }
 
 /* 2. Contêiner Interno (Será animado) */
