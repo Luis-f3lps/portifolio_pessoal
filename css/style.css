@@ -392,6 +392,7 @@ p {
     font-size: 0.9rem;
     line-height: 1.5;
     flex-grow: 1;
+    color: white;
 }
 
 .modal .info span {
