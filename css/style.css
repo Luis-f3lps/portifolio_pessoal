@@ -750,20 +750,6 @@ p {
     /* Certifica que a cor do parágrafo é clara, sobrepondo o p global */
 }
 
-/* Responsividade: Diminui para 2 colunas em telas menores */
-@media (max-width: 900px) {
-    .skills-grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-}
-
-/* Responsividade: Apenas 1 coluna em celular */
-@media (max-width: 500px) {
-    .skills-grid-container {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* Responsividade Mobile */
 @media only screen and (max-width: 600px) {
@@ -772,6 +758,35 @@ p {
         gap: 10px;
     }
 
+
+
+    .exp-date {
+        flex-direction: row;
+        gap: 8px;
+        text-align: left;
+    }
+
+    .exp-content {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid #333;
+        padding-top: 15px;
+    }
+
+    .exp-content::before {
+        display: none;
+    }
+}
+
+/* --- Layout Desktop (Media Query) --- */
+@media only screen and (max-width: 2532px) and (min-height: 1170px),
+only screen and (max-width: 2340px) and (min-height: 1080px) {
+
+    body {
+        display: flex;
+        /* Ativa layout desktop */
+        overflow: hidden;
+    }
     .skills-grid-container {
         display: inline-block;
     }
@@ -805,35 +820,6 @@ p {
     .skills-grid-container {
         display: inline-block;
     }
-
-    .exp-date {
-        flex-direction: row;
-        gap: 8px;
-        text-align: left;
-    }
-
-    .exp-content {
-        border-left: none;
-        padding-left: 0;
-        border-top: 1px solid #333;
-        padding-top: 15px;
-    }
-
-    .exp-content::before {
-        display: none;
-    }
-}
-
-/* --- Layout Desktop (Media Query) --- */
-@media only screen and (max-width: 2532px) and (min-height: 1170px),
-only screen and (max-width: 2340px) and (min-height: 1080px) {
-
-    body {
-        display: flex;
-        /* Ativa layout desktop */
-        overflow: hidden;
-    }
-
     .main-content {
         width: 100%;
     }
