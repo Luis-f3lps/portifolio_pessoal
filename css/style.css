@@ -413,6 +413,10 @@ p {
     display: block;
 }
 
+#portifolio {
+    padding-bottom: 30px;
+    background: #002b33;
+}
 .modal .links a {
     display: none;
     text-decoration: none;
