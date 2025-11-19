@@ -809,6 +809,10 @@ only screen and (max-width: 2340px) and (min-height: 1080px) {
         font-size: 24px;
     }
 
+    .btn {
+        font-size: 30px;
+    }
+
     .modal .info h2 {
         font-size: 32px;
         margin: 10px;
@@ -889,6 +893,8 @@ only screen and (max-width: 2340px) and (min-height: 1080px) {
     }
 
     #menu-toggle-open {
+        font-size: 60px;
+
         display: block;
     }
 
