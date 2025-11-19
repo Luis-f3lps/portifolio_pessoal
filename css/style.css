@@ -787,8 +787,50 @@ only screen and (max-width: 2340px) and (min-height: 1080px) {
         /* Ativa layout desktop */
         overflow: hidden;
     }
+
     .skills-grid-container {
         display: inline-block;
+    }
+
+    .modal .miniatura {
+        display: flow-root;
+    }
+
+    .modal .info p {
+        font-size: 26px;
+        margin: 10px;
+    }
+.exp-date {
+    font-size: 24px;}
+    .modal .info h2 {
+        font-size: 32px;
+        margin: 10px;
+    }
+
+    .exp-content .exp-role {
+        font-size: 22px;
+    }
+
+    .exp-content h3 {
+        font-size: 24px;
+    }
+
+    .tab-links {
+        margin-right: 50px;
+        font-size: 28px;
+    }
+
+    .services-list div h2 {
+        font-size: 26px;
+    }
+
+    .services-list div p {
+        font-size: 28px;
+    }
+
+    .modal .links a {
+        font-size: 28px;
+        margin: 10px;
     }
 
     .services-list div {
@@ -820,6 +862,7 @@ only screen and (max-width: 2340px) and (min-height: 1080px) {
     .skills-grid-container {
         display: inline-block;
     }
+
     .main-content {
         width: 100%;
     }
