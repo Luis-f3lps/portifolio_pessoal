@@ -800,8 +800,15 @@ only screen and (max-width: 2340px) and (min-height: 1080px) {
         font-size: 26px;
         margin: 10px;
     }
-.exp-date {
-    font-size: 24px;}
+
+    .exp-content p {
+        font-size: 24px;
+    }
+
+    .exp-date {
+        font-size: 24px;
+    }
+
     .modal .info h2 {
         font-size: 32px;
         margin: 10px;
