@@ -22,10 +22,10 @@ p {
 .container {
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 30px;
     padding-right: 100px;
     padding-left: 100px;
-    padding-top: 30px;
+    padding-top: 30px;    padding-bottom: 30px;
+
 }
 
 .header-text h1 span {
@@ -63,7 +63,6 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 30px;
 }
 
 .about-col-1 {
@@ -174,9 +173,6 @@ p {
 }
 
 /* --- Portifolio / Certificados --- */
-#portifolio {
-        padding: 30px;
-}
 
 .work-list {
     display: grid;
