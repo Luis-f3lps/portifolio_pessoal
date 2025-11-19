@@ -18,11 +18,14 @@ p {
     color: #000000;
 }
 
+
 .container {
     margin-right: auto;
     margin-left: auto;
-    width: 80%;
     margin-bottom: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 30px;
 }
 
 .header-text h1 span {
@@ -384,7 +387,7 @@ p {
 }
 
 .modal .info h2 {
-    color: #ab47bc;
+    color: #00accc;
     margin-top: 0;
 }
 
@@ -415,8 +418,8 @@ p {
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #ab47bc;
-    color: #f1f1f1;
+    background-color: #00accc;
+    color: #000000;
     font-weight: bold;
     transition: background-color 0.3s;
 }
