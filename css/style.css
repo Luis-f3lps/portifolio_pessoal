@@ -846,7 +846,7 @@ only screen and (max-width: 2340px) and (min-height: 1080px) {
 
     .services-list div {
 
-        margin: 60px;
+        margin-bottom: 60px;
     }
 
     .services-list {
@@ -859,7 +859,7 @@ only screen and (max-width: 2340px) and (min-height: 1080px) {
     }
 
     .work {
-        margin: 60px;
+        margin-bottom: 60px;
     }
 
     .work-list {
@@ -867,11 +867,12 @@ only screen and (max-width: 2340px) and (min-height: 1080px) {
     }
 
     .skill-card {
-        margin: 40px;
+        margin-bottom: 40px;
     }
 
     .skills-grid-container {
         display: inline-block;
+        width: 100%;
     }
 
     .main-content {
