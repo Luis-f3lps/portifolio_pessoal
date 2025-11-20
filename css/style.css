@@ -749,7 +749,9 @@ p {
     color: #cfcfcf;
     /* Certifica que a cor do parágrafo é clara, sobrepondo o p global */
 }
-
+   h2 {
+        margin-top:45px;
+    }
 
 /* Responsividade Mobile */
 @media only screen and (max-width: 600px) {
@@ -873,6 +875,15 @@ only screen and (max-width: 2340px) and (min-height: 1080px) {
     .skills-grid-container {
         display: inline-block;
         width: 100%;
+    }
+
+    .sobre {
+        margin-top: 50px;
+    }
+
+    h2 {
+        margin-top: 35px;
+        font-size: 32px;
     }
 
     .main-content {
