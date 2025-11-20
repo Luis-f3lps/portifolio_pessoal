@@ -750,7 +750,8 @@ p {
     /* Certifica que a cor do parágrafo é clara, sobrepondo o p global */
 }
    h2 {
-        margin-top:45px;
+        margin-top:25px;
+         font-size: 18px;
     }
 
 /* Responsividade Mobile */
