@@ -1,59 +1,76 @@
-# Portfólio de Projetos de Inovação | Hub IFNMG - Campus Salinas
+# Portfólio Profissional | Luis Santiago
 
-![Status](https://img.shields.io/badge/status-ativo-success)
-![Instituição](https://img.shields.io/badge/instituição-IFNMG-blue)
-![Licença](https://img.shields.io/badge/license-CC--BY--NC--SA%204.0-lightgrey)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Status](https://img.shields.io/badge/status-ativo-success?style=for-the-badge)
 
-Este repositório funciona como a vitrine digital e o catálogo dinâmico dos projetos de pesquisa aplicada, inovação e extensão tecnológica desenvolvidos no âmbito do **Hub de Inovação do Instituto Federal do Norte de Minas Gerais - Campus Salinas**.
-
-Nosso principal objetivo é ser a ponte entre o conhecimento científico gerado na academia e as necessidades práticas de empresas, empresários e produtores do Norte de Minas, fomentando o desenvolvimento regional por meio da inovação.
-
-## 🎯 Objetivo do Portfólio
-
-* **Apresentar** de forma clara e organizada as competências e tecnologias desenvolvidas no IFNMG - Campus Salinas.
-* **Facilitar** a conexão entre os desafios do mercado e as soluções científicas disponíveis.
-* **Fomentar** a cultura da inovação e da parceria Universidade-Empresa na região.
-* **Servir** como uma ferramenta de consulta para potenciais parceiros, investidores e para a comunidade em geral.
-
-## 🔬 Áreas de Foco
-
-Nossas áreas prioritárias de atuação estão alinhadas com os arranjos produtivos locais, com destaque para:
-
-* **Tecnologia em Cachaça e Derivados**
-* **Nutrição Animal e Zootecnia de Precisão**
-
-Além do foco principal, estamos de portas abertas para desenvolver projetos e parcerias em outras áreas estratégicas, como:
-* Fruticultura e Agroindústria
-* Energias Renováveis Aplicadas ao Campo
-* Gestão Hídrica e Agricultura de Precisão
-* Apicultura e Derivados
-* Turismo Tecnológico e Cultural
-
-## 📂 Como Navegar nos Projetos
-
-Os projetos estão organizados em diretórios por área de atuação dentro da pasta `/projetos`.
-
-Cada projeto possui seu próprio arquivo `README.md` com informações detalhadas, incluindo:
-* Resumo do Projeto
-* Problema que Resolve
-* Estágio de Desenvolvimento (Ex: Ideia, Protótipo, Produto Final)
-* Pesquisadores Envolvidos
-* Modelo de Parceria Buscado
-
-## 🤝 Como Contribuir ou Sugerir um Projeto
-
-Este é um portfólio vivo e em constante atualização.
-
-* **Pesquisadores do IFNMG:** Se você tem um projeto com potencial de inovação e quer incluí-lo no portfólio, entre em contato conosco ou abra uma "Issue" neste repositório descrevendo a sua proposta.
-* **Empresas e Produtores:** Se você tem um desafio ou um problema e acredita que a ciência pode ajudar, nos envie sua demanda! Podemos conectar seu desafio a um pesquisador capaz de desenvolver uma solução.
-
-## ✉️ Contato
-
-Para mais informações, parcerias ou dúvidas, entre em contato com o Hub de Inovação do IFNMG - Campus Salinas.
-
-* **Agente de Inovação Local:** [Seu Nome]
-* **E-mail:** [Seu e-mail profissional ou do Hub]
-* **Website:** [Link para o site do IFNMG ou do Hub, se houver]
+> **Bem-vindo ao repositório do meu Portfólio Pessoal.** > Este projeto reúne minha trajetória acadêmica, experiências profissionais e os principais softwares que desenvolvi.
 
 ---
-O conteúdo textual deste portfólio está licenciado sob a [Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+## 👨‍💻 Sobre Mim
+
+**Olá, sou Luis Gustavo Barbosa Santiago.**
+
+Sou **Técnico em Informática** e Bacharel em **Sistemas de Informação** pelo IFNMG - Campus Salinas, atualmente cursando Pós-Graduação em **User Experience (UX) Design** na PUCRS.
+
+Atuo como **Agente de Inovação Local** e Diretor do Conselho Fiscal na SIFSoft. Tenho paixão por transformar necessidades complexas em interfaces intuitivas e funcionais, unindo o rigor técnico do desenvolvimento backend com a sensibilidade do design de experiência.
+
+## 🛠️ Stack Tecnológica
+
+Minhas principais competências técnicas incluem:
+
+| Área | Tecnologias |
+| :--- | :--- |
+| **Linguagens** | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) ![Java](https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white) ![C](https://img.shields.io/badge/-C-00599C?logo=c&logoColor=white) |
+| **Web & Front-end** | ![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black) |
+| **Back-end & DB** | ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white) ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white) |
+
+## 🚀 Projetos em Destaque
+
+Este portfólio apresenta uma curadoria dos meus trabalhos mais recentes. Abaixo, alguns destaques extraídos do sistema:
+
+### ⚔️ Age of Empires 4 Comparator
+Ferramenta web para fãs do jogo, permitindo a comparação lado a lado de unidades únicas de diferentes civilizações.
+* **Tech:** HTML, CSS, JS (Async/Await, Fetch API).
+* **Destaque:** Sistema multi-idioma e consumo de API dinâmica.
+
+### 🏋️ Sistema de Montar Treino (IFNMG)
+Plataforma interativa para criação de fichas de treino personalizadas para a academia do campus.
+* **Tech:** Front-end dinâmico com carregamento de GIFs via repositório GitHub.
+* **Funcionalidade:** Filtro por grupo muscular e geração de string de treino compartilhável.
+
+### 📅 Agendamento de Aulas em Laboratório
+Sistema de gestão de espaços baseado em papéis (RBAC) para professores e técnicos.
+* **Tech:** Lógica avançada de DOM para controle de visualização (Admin/Técnico/Professor).
+* **Funcionalidade:** Dashboard com calendário visual e status de solicitações.
+
+### 📊 Portfólio de Inovação (Hub IFNMG)
+Vitrine digital dos projetos de pesquisa e extensão do Hub de Inovação.
+* **Tech:** Integração com **Chart.js** para visualização de dados estatísticos dos projetos.
+
+## ⚙️ Funcionalidades deste Site
+
+O código-fonte deste portfólio foi construído focando em interatividade e apresentação limpa:
+
+* **Sistema de Modais Dinâmicos:** Um único script (`index.js`) gerencia a abertura de detalhes de todos os projetos, populando o modal com dados extraídos dos atributos `data-*` do HTML, garantindo leveza e performance.
+* **Navegação Responsiva:** Sidebar adaptável para dispositivos móveis.
+* **LogoLoop:** Carrossel infinito ("marquee") desenvolvido em CSS/JS para exibir as tecnologias dominadas.
+
+## 🎓 Formação e Experiência
+
+* **2025 - 2026:** Pós-Graduação em UX Design (PUCRS).
+* **2024 - Atual:** Agente de Inovação Local (IFNMG).
+* **2019 - 2024:** Bacharelado em Sistemas de Informação.
+* **2022 - 2024:** Bolsista de Apoio Técnico (Inovação e Extensão).
+
+## 📫 Contato
+
+Quer falar sobre um projeto ou oportunidade?
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Luis%20Santiago-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/luis-gustavo-barbosa-santiago-648395280/)
+[![Instagram](https://img.shields.io/badge/Instagram-@luis_f3lps-E4405F?style=for-the-badge&logo=instagram)](https://www.instagram.com/luis_f3lps/)
+
+---
+Desenvolvido com 💙 por **Luis Santiago**.
